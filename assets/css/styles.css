@@ -7,28 +7,20 @@
     color: white;
 }
 
-html {
-    height: 100%;
-} 
-
 body {
-    height: 100%;
     background-image: url("/assets/img/background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.box {
-    display: flex;
+.custom-row {
     justify-content: space-between;
 }
 
-.flex-container1 {
+.box {
     display: flex;
-    flex-direction: column;
-    width: 60%;
-    height: 100%;
+    justify-content: space-between;
 }
 
 .flex-container2 {
@@ -76,6 +68,11 @@ body {
     /* margin-right: 15rem; */
     margin-top: 9px;
     font-size: 1rem;
+}
+
+button {
+    border: none;
+    background-color: transparent;
 }
 
 input {
@@ -126,4 +123,71 @@ input {
     display: flex;
     justify-content: space-between;
     font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 1223px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    #temp {
+        font-size: 7rem;
+    }
+    .city h1 {
+        font-size: 2.5rem;
+    }
+    .city small {
+        font-size: 12px;
+    }
+    input {
+        width: 15rem;
+    }
+}
+
+@media only screen and (max-width: 944px) {
+    input {
+        width: 10rem;
+    }
+} 
+
+@media only screen and (max-width: 799px) {
+    h2 {
+        font-size: 1rem;
+    }
+    #temp {
+        font-size: 5.7rem;
+        margin-top: 3px;
+    }
+    .city h1 {
+        font-size: 1.7rem;
+    }
+    .city small {
+        font-size: 8px;
+    }
+    input {
+        width: 8rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    h2 {
+        font-size: 0.7rem;
+    }
+    #temp {
+        font-size: 5rem;
+    }
+    .city h1 {
+        font-size: 1rem;
+    }
+    .city small {
+        font-size: 6px;
+    }
+    input {
+        width: 5rem;
+    }
+    ::placeholder {
+        font-size: 0.7rem;
+    }
+    .cities h2 {
+        font-size: 0.7rem;
+    }
 }
